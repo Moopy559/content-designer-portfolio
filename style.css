@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+:root {
+  --text: #120128;
+  --background: #f3e5ff;
+  --primary: #43028d;
+  --secondary: #fc5fcf;
+  --accent: #f60469;
+}
+
+* {
+  /* outline: solid 1px red; */
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--text);
+  background-color: var(--background);
+  margin: 0px;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: var(--text);
+  padding-bottom: 0.1rem;
+  border-bottom: solid 0.2rem var(--accent);
+  display: inline-block;
+}
+a:hover {
+  border-bottom: solid 0.2rem var(--secondary);
+  transition: border-bottom 200ms;
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: flex-end;
+  a {
+    border: none;
+  }
+  svg {
+    fill: var(--accent);
+    width: 3rem;
+  }
+}
+
+.title {
+  border-bottom: solid 1px var(--accent);
+  margin-bottom: 6rem;
+  h1 {
+    margin-bottom: 2rem;
+  }
+  p {
+    margin-bottom: 6rem;
+  }
+  a {
+    margin-bottom: 10rem;
+  }
+  span {
+    text-decoration: solid 0.4rem var(--accent) underline;
+  }
+}
+
+.skills {
+  border-bottom: solid 1px var(--accent);
+  margin-bottom: 6rem;
+  h2 {
+    margin-bottom: 2rem;
+  }
+  ul {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 6rem;
+  }
+  li {
+    list-style-type: none;
+    font-size: 2rem;
+  }
+}
+
+.projects {
+  margin-bottom: 6rem;
+  h2 {
+    margin-bottom: 2rem;
+  }
+  h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  li {
+    list-style-type: none;
+  }
+  img {
+    width: 100%;
+    border-radius: 5px;
+    border-left: solid 10px var(--accent);
+  }
+  img:hover {
+    border-left: solid 10px var(--secondary);
+    transition: border-left 200ms;
+  }
+  img:not(:hover) {
+    transition: border-left 200ms;
+  }
+  p {
+    margin-top: 1rem;
+  }
+  a {
+    border: none;
+  }
+}
+
+.tooling {
+  display: flex;
+  gap: 2rem;
+  margin-top: 0.5rem;
+  a {
+    border-bottom: solid 0.2rem var(--accent);
+  }
+  a:hover {
+    border-bottom: solid 0.2rem var(--secondary);
+    transition: border-bottom 200ms;
+  }
+}
+
+.contact {
+  margin-bottom: 4rem;
+  border-bottom: solid 1px var(--accent);
+  p {
+    margin-bottom: 2rem;
+  }
+  a {
+    margin-bottom: 10rem;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8rem;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: var(--accent);
+  a {
+    border: none;
+  }
+  svg {
+    fill: var(--accent);
+    width: 3rem;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .wrapper {
+    max-width: 900px;
+  }
+
+  .projects {
+    text-align: center;
+    ul {
+      grid-template-columns: 1fr;
+    }
+  }
+  .tooling {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  .wrapper {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    max-width: 300px;
+  }
+  .skills {
+    li {
+      font-size: 1rem;
+    }
+  }
+  .footer {
+    font-size: 1.25rem;
+  }
+}
