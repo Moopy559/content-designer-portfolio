@@ -97,6 +97,68 @@ a:hover {
   }
 }
 
+.graphic-design {
+  margin-bottom: 6rem;
+  border-bottom: solid 1px var(--accent);
+  h2 {
+    margin-bottom: 2rem;
+  }
+  ul {
+    display: grid;
+    margin-bottom: 6rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.5fr 1fr 1fr 2fr;
+    gap: 2rem;
+    align-items: center;
+    grid-template-areas:
+      "square1 square2 square3 square4"
+      "wide1 wide1 wide2 wide2"
+      "wide3 wide3 wide4 wide4"
+      "tall1 tall2 tall3 tall4";
+  }
+  li {
+    list-style-type: none;
+  }
+  img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+.motion-graphics {
+  margin-bottom: 6rem;
+  border-bottom: solid 1px var(--accent);
+  h2 {
+    margin-bottom: 2rem;
+  }
+  ul {
+    display: grid;
+    margin-bottom: 6rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.5fr 1fr 1fr 2fr;
+    gap: 2rem;
+    align-items: center;
+    grid-template-areas:
+      "square1 square2 square3 square4"
+      "wide1 wide1 wide2 wide2"
+      "wide3 wide3 wide4 wide4"
+      "tall1 tall2 tall3 tall4";
+  }
+  li {
+    list-style-type: none;
+  }
+  img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
 .projects {
   margin-bottom: 6rem;
   h2 {
@@ -178,6 +240,21 @@ a:hover {
 @media screen and (max-width: 1400px) {
   .wrapper {
     max-width: 900px;
+  }
+
+  .graphic-design {
+    text-align: center;
+    ul {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas:
+        "square1 square2"
+        "square3 square4"
+        "wide1 wide2"
+        "wide3 wide4"
+        "tall1 tall2"
+        "tall3 tall4";
+    }
   }
 
   .projects {
