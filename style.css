@@ -97,6 +97,24 @@ a:hover {
   }
 }
 
+.header-button {
+  display: flex;
+  justify-content: space-between;
+  button {
+    border: none;
+    font-family: "Space Grotesk", sans-serif;
+    color: var(--accent);
+    background: none;
+    text-transform: lowercase;
+    font-weight: 900;
+    font-size: 1.25rem;
+  }
+  button:hover {
+    color: var(--secondary);
+    transition: color 200ms;
+  }
+}
+
 .graphic-design {
   margin-bottom: 6rem;
   border-bottom: solid 1px var(--accent);
@@ -137,15 +155,40 @@ a:hover {
   ul {
     display: grid;
     margin-bottom: 6rem;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.5fr 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
     align-items: center;
     grid-template-areas:
-      "square1 square2 square3 square4"
-      "wide1 wide1 wide2 wide2"
-      "wide3 wide3 wide4 wide4"
-      "tall1 tall2 tall3 tall4";
+      "wide1 wide2"
+      "wide3 wide4";
+  }
+  li {
+    list-style-type: none;
+  }
+  img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+.infographics {
+  margin-bottom: 6rem;
+  border-bottom: solid 1px var(--accent);
+  h2 {
+    margin-bottom: 2rem;
+  }
+  ul {
+    display: grid;
+    margin-bottom: 6rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    grid-template-areas:
+      "wide1 wide2 wide3"
+      "wide4 wide5 wide6";
   }
   li {
     list-style-type: none;
@@ -237,9 +280,20 @@ a:hover {
   }
 }
 
+.hidden {
+  display: none;
+}
+
 @media screen and (max-width: 1400px) {
   .wrapper {
     max-width: 900px;
+  }
+
+  .header-button {
+    flex-direction: column;
+    button {
+      margin-bottom: 1rem;
+    }
   }
 
   .graphic-design {
@@ -254,6 +308,22 @@ a:hover {
         "wide3 wide4"
         "tall1 tall2"
         "tall3 tall4";
+    }
+  }
+
+  .motion-graphics {
+    text-align: center;
+  }
+
+  .infographics {
+    text-align: center;
+
+    ul {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "wide1 wide2"
+        "wide3 wide4"
+        "wide5 wide6";
     }
   }
 
