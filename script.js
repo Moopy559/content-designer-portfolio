@@ -18,15 +18,15 @@ motionBtn.addEventListener("click", () => {
     : (motionBtn.textContent = "Hide");
 });
 
-const infoContent = document.getElementById("infographics-content");
-const infoBtn = document.getElementById("infographicsBtn");
+// const infoContent = document.getElementById("infographics-content");
+// const infoBtn = document.getElementById("infographicsBtn");
 
-infoBtn.addEventListener("click", () => {
-  infoContent.classList.toggle("hidden");
-  infoContent.classList.contains("hidden")
-    ? (infoBtn.textContent = "Show")
-    : (infoBtn.textContent = "Hide");
-});
+// infoBtn.addEventListener("click", () => {
+//   infoContent.classList.toggle("hidden");
+//   infoContent.classList.contains("hidden")
+//     ? (infoBtn.textContent = "Show")
+//     : (infoBtn.textContent = "Hide");
+// });
 
 const webContent = document.getElementById("web-content");
 const webBtn = document.getElementById("webBtn");

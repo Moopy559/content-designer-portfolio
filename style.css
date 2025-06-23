@@ -204,6 +204,7 @@ a:hover {
 
 .projects {
   margin-bottom: 6rem;
+  border-bottom: solid 1px var(--accent);
   h2 {
     margin-bottom: 2rem;
   }
@@ -213,6 +214,7 @@ a:hover {
   }
   ul {
     display: grid;
+    margin-bottom: 6rem;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
   }
